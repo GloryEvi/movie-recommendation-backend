@@ -185,15 +185,15 @@ SIMPLE_JWT = {
 }
 
 # Redis Cache Configuration
-CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': config('REDIS_URL', default='redis://localhost:6379/1'),
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        }
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django_redis.cache.RedisCache',
+#         'LOCATION': config('REDIS_URL', default='redis://localhost:6379/1'),
+#         'OPTIONS': {
+#             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+#         }
+#     }
+# }
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', default='http://localhost:3000').split(',')
